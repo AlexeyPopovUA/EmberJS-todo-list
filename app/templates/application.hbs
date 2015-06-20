@@ -1,6 +1,13 @@
-<h2 id="title">Welcome to Ember.js</h2>
-{{#link-to 'tasks'}}tasks{{/link-to}}
-{{#link-to 'index'}}home{{/link-to}}
-<div>{{outlet}}</div>
-<div>{{test}}</div>
-<div>{{test2}}</div>
+<header>
+  <h1>This is simple todo-list application</h1>
+  <div id="navigation-links-container">
+    {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'tasks'}}Tasks{{/link-to}}
+  </div>
+</header>
+
+<div id="content">{{outlet}}</div>
+
+<footer>
+  Something in footer
+</footer>
