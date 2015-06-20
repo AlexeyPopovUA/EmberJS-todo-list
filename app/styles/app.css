@@ -1,0 +1,16 @@
+header {
+  margin-bottom: 20px;
+}
+
+#tasks-container {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+#tasks-container .single-task {
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 20px;
+}
