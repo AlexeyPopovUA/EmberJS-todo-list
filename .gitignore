@@ -22,3 +22,4 @@ node_modules
 
 *.iml
 /.brackets.json
+/nbproject
