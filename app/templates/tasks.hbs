@@ -1,10 +1,10 @@
 <div id="tasks">
     <h2>Tasks:</h2>
-    <div id="tasks-container">
-      {{#each taskList as |task|}}
+    <section id="tasks-container">
+      {{#each model as |task|}}
         {{single-task name=task.name description=task.description}}
       {{else}}
         <span>Sorry, the task list is empty</span>
       {{/each}}
-    </div>
+    </section>
 </div>

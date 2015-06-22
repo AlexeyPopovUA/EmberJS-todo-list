@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  setupController: function () {
-    console.log("Tasks!");
+  setupController: function (controller) {
+    controller.set('model', this.store.find('task'));
   }
 });
