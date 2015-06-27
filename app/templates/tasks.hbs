@@ -1,7 +1,18 @@
 <div id="tasks">
+    <h2>Add new task</h2>
+    <section id="add-new-task">
+        <div id="new-task">
+            <form {{action 'onSubmitAction' on='submit'}}>
+                <div id="new-task-name">{{input value=newItem.name}}</div>
+                <div id="new-task-description">{{input value=newItem.description}}</div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
     <h2>Tasks:</h2>
     <section id="tasks-container">
-      {{#each model as |task|}}
+      {{#each task in model}}
         {{single-task name=task.name description=task.description}}
       {{else}}
         <span>Sorry, the task list is empty</span>
